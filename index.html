@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selamat Ulang Tahun!</title>
+  <title>Selamat Ulang Tahun Sayyangkuuuuuuu !</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -65,19 +65,6 @@
 
   <p>Semoga hari-harimu selalu penuh dengan kebahagiaan, tawa, dan cinta. Selamat bertambah usia sayangkuuuuhhh🎉🎂</p>
 
-<!-- <div class="carousel">
-  <img src="img/1.JPG" class="slide active" alt="Foto 1">
-  <img src="img/2.JPG" class="slide" alt="Foto 2">
-  <img src="img/3.JPG" class="slide" alt="Foto 3">
-  <img src="img/4.JPG" class="slide" alt="Foto 4">
-  <img src="img/5.JPG" class="slide" alt="Foto 5">
-  <img src="img/6.JPG" class="slide" alt="Foto 6">
-  <img src="img/7.JPG" class="slide" alt="Foto 7">
-  <img src="img/8.JPG" class="slide" alt="Foto 8">
-  <img src="img/9.JPG" class="slide" alt="Foto 9">
-  <img src="img/10.JPG" class="slide" alt="Foto 10">
-</div> -->
-
   <div class="carousel-container">
     <div class="carousel-slide active">
       <img src="img/1.JPG" alt="Foto 1">
@@ -109,6 +96,18 @@
     <div class="carousel-slide">
       <img src="img/10.JPG" alt="Foto 3">
     </div>
+    <div class="carousel-slide">
+      <img src="img/17.JPG" alt="Foto 3">
+    </div>
+    <div class="carousel-slide">
+      <img src="img/18.JPG" alt="Foto 3">
+    </div>
+    <div class="carousel-slide">
+      <img src="img/19.JPG" alt="Foto 3">
+    </div>
+    <div class="carousel-slide">
+      <img src="img/24.JPG" alt="Foto 3">
+    </div>
   </div>
 
 <audio id="bgm" loop>
@@ -129,4 +128,152 @@
 
 
 </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun Sayyangkuuuuuuu !</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      color: #333;
+      text-align: center;
+    }
+
+    h1, p, .carousel-container {
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+
+    .show {
+      opacity: 1;
+    }
+
+    button {
+      margin-top: 3rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1.2rem;
+      font-family: 'Pacifico', cursive;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff8a65;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff7043;
+    }
+
+    .carousel-container {
+      width: 100%;
+      max-width: 400px;
+      height: 600px;
+      margin: 2rem auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background: #fff;
+    }
+
+    .carousel-slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .carousel-slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="start()">Klik Aku Ya :)</button>
+
+  <h1 id="judul">Selamat Ulang Tahun!</h1>
+  <p id="pesan">Semoga hari-harimu selalu penuh dengan kebahagiaan, tawa, dan cinta. semakin sayang kepada orang tua, makin semangat kerjanya, tidak sombong,
+    pintar, cantek serta rajin menabung. Tak lupa juga semoga semakin sayang sama akuuuu ehehheh.. 
+    <br> Selamat bertambah usia sayangkuuuuhhh 🎉🎂</p>
+
+  <div class="carousel-container" id="carousel">
+    <!-- Gambar carousel -->
+    <div class="carousel-slide active">
+      <img src="img/1.JPG" alt="Foto 1">
+    </div>
+    <div class="carousel-slide"><img src="img/2.JPG" alt="Foto 2"></div>
+    <div class="carousel-slide"><img src="img/3.JPG" alt="Foto 3"></div>
+    <div class="carousel-slide"><img src="img/4.JPG" alt="Foto 4"></div>
+    <div class="carousel-slide"><img src="img/5.JPG" alt="Foto 5"></div>
+    <div class="carousel-slide"><img src="img/6.JPG" alt="Foto 6"></div>
+    <div class="carousel-slide"><img src="img/7.JPG" alt="Foto 7"></div>
+    <div class="carousel-slide"><img src="img/8.JPG" alt="Foto 8"></div>
+    <div class="carousel-slide"><img src="img/9.JPG" alt="Foto 9"></div>
+    <div class="carousel-slide"><img src="img/10.JPG" alt="Foto 10"></div>
+    <div class="carousel-slide"><img src="img/17.JPG" alt="Foto 11"></div>
+    <div class="carousel-slide"><img src="img/18.JPG" alt="Foto 12"></div>
+    <div class="carousel-slide"><img src="img/19.JPG" alt="Foto 13"></div>
+    <div class="carousel-slide"><img src="img/24.JPG" alt="Foto 14"></div>
+  </div>
+
+  <audio id="bgm" loop>
+    <source src="audio/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function start() {
+      // Sembunyikan tombol
+      const btn = document.querySelector("button");
+      btn.style.display = "none";
+
+      // Mainkan musik
+      document.getElementById("bgm").play();
+
+      // Tampilkan elemen dengan animasi fade-in
+      document.getElementById("judul").classList.add("show");
+      document.getElementById("pesan").classList.add("show");
+
+      // Tampilkan carousel setelah delay sedikit
+      setTimeout(() => {
+        document.getElementById("carousel").classList.add("show");
+      }, 1000);
+    }
+
+    // Carousel logic
+    let current = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const total = slides.length;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % total;
+      slides[current].classList.add('active');
+    }, 2000);
+  </script>
+
+</body>
 </html>
+
