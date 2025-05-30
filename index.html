@@ -38,9 +38,11 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* agar portrait tampil penuh tanpa terpotong */
+  object-fit: contain; /* tampilkan seluruh gambar tanpa crop */
+  object-position: center; /* pastikan posisi tengah */
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  background: white; /* biar gak ada background transparan */
 }
 .slide.active {
   opacity: 1;
