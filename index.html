@@ -23,27 +23,29 @@
       font-size: 1.5rem;
       margin: 1rem 2rem;
     }
-    .carousel {
-        position: relative;
-        width: 90%;
-        max-width: 600px;
-        height: 300px;
-        margin: 2rem auto;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    .slide.active {
-        opacity: 1;
-    }
+   .carousel {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: #fff; /* biar foto portrait tidak kelihatan kosong di pinggir */
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* agar portrait tampil penuh tanpa terpotong */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+
 
 
   </style>
